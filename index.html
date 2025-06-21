@@ -7,16 +7,29 @@
 </head>
 <body>
   <header>
-    <h1>Catálogo de Productos</h1>
+    <h1>Tienda de Deadpool</h1>
+    <div id="carrito">
+      <h2>Carrito</h2>
+      <ul id="lista-carrito"></ul>
+      <p>Total: $<span id="total">0.00</span></p>
+    </div>
   </header>
 
-  <section class="producto">
-    <img src="https://via.placeholder.com/150" alt="Producto 1">
-    <h2>Nombre del Producto</h2>
-    <p>Descripción breve del artículo.</p>
-    <span class="precio">$19.99</span>
-    <button>Agregar al carrito</button>
-  </section>
+  <main id="catalogo">
+    <!-- Producto ejemplo -->
+    <div class="producto">
+      <img src="https://via.placeholder.com/150" alt="Producto 1">
+      <h2>Producto 1</h2>
+      <p>Descripción del producto 1</p>
+      <span class="precio">19.99</span>
+      <button onclick="agregarAlCarrito('Producto 1', 19.99)">Agregar al carrito</button>
+      <a class="whatsapp" target="_blank"
+        href="https://wa.me/584140000000?text=Hola%2C%20quiero%20comprar%20Producto%201%20por%2019.99$">
+        Comprar por WhatsApp
+      </a>
+    </div>
+  </main>
 
+  <script src="script.js"></script>
 </body>
 </html>
